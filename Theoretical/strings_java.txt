@@ -1,0 +1,99 @@
+//		String s=new String("aditya");// string
+//		s.concat(" engineering");
+//		System.out.println(s);
+//		
+		StringBuffer sb=new StringBuffer("Aditya");// mutability
+		sb.append("College");
+		//System.out.println(sb); // aditya college
+		
+		/*String s1=new String("Aditya College of Engineering");
+		System.out.println(s1.charAt(9));*/
+		
+		/*String s1=new String("i am learning java Programming");
+		String s2=new String("i am learning java Programming");
+		//System.out.println(s1==s2);*/
+		
+		// returns boolean Value,, here it is false because of "==" the memory reference will be compared.from the above s1 and s2 the content is same 
+		// but reference is different(both are declared using two different new's)
+		
+		//System.out.println(s1.equals(s2));
+		
+		// returns True because here content comparison will be done, Even though there are declared using diff new's but content is same so Return TRUE
+		
+		//String s1=new String("I love Farming ");
+		//System.out.println(s1.indexOf("l"));
+		// returns the indexof the particular character
+		
+		/*String s2=new String("I love Farming very much");
+		System.out.println(s2.lastIndexOf("v"));*/
+		
+		// returns the last index of repeated character
+	     
+		/*String a=new String("AdityA");
+		String b=new String("aditya");
+		//System.out.println(a.equals(b));*/ // false 
+		
+		// returns false because case sensitive
+		
+		/*String a1=new String("AdityA");
+		String b1=new String("aditya");
+		System.out.println(a1.equalsIgnoreCase(b1));*/
+		
+		// this function avoids the case sensitive and Returns True
+		
+		/*String a2=new String("Aditya College of Engineering is the best eng college in EG");
+		System.out.println(a2.replace("e", "E"));*/
+		
+		// here all 'e' are replaced with 'E'
+		
+		/*String a3=new String("Aditya college of Engineering is the best eng college in EG");
+		System.out.println(a3.replaceFirst("college","COLLEGE"));*/
+		
+		// first occurenced of college is replaced with "COLLEGE"
+		
+		//String a3=new String("Aditya college of Engineering is the best eng college in EG");
+		//System.out.println(a3.replaceAll("college","COLLEGE"));
+		
+		// all college occurences are replaced with COLLEGE
+		
+		/*InputStreamReader isr=new InputStreamReader(System.in);
+		BufferedReader br=new BufferedReader(isr);
+		String str1;
+		int i,l=0,u=0,d=0,s=0;
+		str1=br.readLine();
+		char ch[]=str1.toCharArray();
+		for(i=0;i<ch.length;i++)
+	if(Character.isLowerCase(ch[i]))
+	{
+		l++;
+	}
+	else if (Character.isUpperCase(ch[i]))
+			{
+				u++;
+			}
+	else if (Character.isDigit(ch[i]))
+		{
+		d++;
+		}
+	else
+	{
+		s++;
+	}
+		System.out.println(l+" "+u+" "+d+" "+s);
+		}
+		}*/
+//		
+//		InputStreamReader isr=new InputStreamReader(System.in);
+//		BufferedReader br=new BufferedReader(isr);
+//		String a;
+//		int sum=0;
+//		a=br.readLine();
+//		char c[]=a.toCharArray();
+//		for (int i=0;i<c.length;i++)
+//		{
+//			if (Character.isDigit(c[i]))
+//				sum+=Integer.parseInt(c[i]+"");// another approach by using c[i]-48// here 48 means its a unicode of zero
+//		}
+//		System.out.println(sum);
+//	}
+//}
