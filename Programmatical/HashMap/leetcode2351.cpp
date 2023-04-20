@@ -1,7 +1,7 @@
 class Solution {
     public char repeatedCharacter(String s) {
         HashMap<Character,Integer> mp = new HashMap<>(); // declaration
-        for(int i=0;i<s.length();i++)
+        for(int i = 0;i < s.length(); i++)
         {
             if(mp.containsKey(s.charAt(i)))
             {
