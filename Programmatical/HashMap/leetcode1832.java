@@ -1,6 +1,6 @@
 class Solution {
     public boolean checkIfPangram(String sentence) {
-        // we can also this problem by using HashSet in java.
+        // we can also this problem by using HashSet in Java.
         HashMap<Character,Integer> Freq = new HashMap<>();
         for(int i = 0; i < sentence.length(); i++)
         {
