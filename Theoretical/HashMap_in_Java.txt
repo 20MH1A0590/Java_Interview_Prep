@@ -1,0 +1,74 @@
+HashMap in Java:
+================
+
+* What is HashMap.?
+
+	-> HashMap is a DataStructure that allows to store and retrive the Key-Value pair.It is a part of Collections Framework in Java.
+
+	-> Keys must be unique whereas Values may or may not be Unique.
+	
+	-> Both Keys and Values may be of any Datatype(Primitive).
+
+
+* Where we use HashMaps.?
+
+	For an Example,->If we have a Student Data. I want to store only rollnumber and marks in the key-value pair.In this Scenario We use 	HashMap and Student Roll Number must be unique because Each and every student have an individual roll number.
+
+	-> Items Vs Prices, In this case items must be Unique whereas prices may or may not be unique.
+
+
+* How to Declare HashMap in Java.?
+
+	Basically we have two types of Declarations of HashMap.
+	
+	-> For ex : HashMap<Integer, Integer> Freq = new HashMap<>();  is one way of declaring the HashMap in Java.
+			-------------------------------------------------								
+	   	In the above declaration, Ordering is not maintained.It mean HashMap can stores key-value pair at anywhere.
+
+	-> For ex : Map<Integer, Integer> Freq = new LinkedHashMap<>(); is another way of declaring the HashMap in Java.
+	            ---------------------------------------------------
+	  	In the above declaration,Ordering is maintained by HashMap.
+
+	-> Simply map Vs unorderedmap in C++.
+
+
+* How to Push the Element into the HashMap in Java.?
+
+	We have Map.put() function to insert or push the element into the HashMap.
+		  ---------
+	-> For ex : Map.put(a[i], Map.get(a[i])+1); is the syntax to update the value of HashMap, if Key already exists in HashMap.
+                  -------------------------------
+	-> Map.put(a[i],1) If key not exits, then insert into The HashMap with value 1.
+	   ---------------
+
+
+* How can we run a loop over HashMap in Java.?
+
+	-> we Have Many ways to run a loop over HashMap.
+
+	-> Best way among those is
+		
+	   For( Datatype iterator : KeySet()) 
+
+		-> above loop iterates all the keys in HashMap.
+
+
+* How can Retrieve the Value of a Particular Key in HashMap.?
+
+	-> For this We have map.get() function
+				  ---------
+		Syntax : map.get(keyname);
+
+
+* Import Methods or Functions We use in implementation of HashMap in Java.
+ -------------------------------------------------------------------------
+
+ -> Map.put()
+
+ -> Map.keySet()
+	
+ -> Map.Values()
+
+ -> Map.get()
+
+	
