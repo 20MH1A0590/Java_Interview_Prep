@@ -1,0 +1,85 @@
+Strings in java:
+----------------
+
+Basically in every programming we can define strings same.
+
+	- String is defined as collection of characters that can be represented with in the double quotes("").
+		Ex: "a", "abc", "bus" ..... e.t.c are strings.
+
+      - Char : char is data type in java that stores only 1 byte of data, either it can be a digit,alphabet,symbol e.t.c
+		
+	      Ex : 'a', '1', '#' ...... e.t.c are characters.
+
+
+Types of string classes in Java:
+--------------------------------
+
+In Java, there are several types of string classes available, including:
+
+1. java.lang.String - This is the most commonly used class for representing strings in Java. It is immutable, which means that once a String object is created, it cannot be modified.
+   ----------------
+   However, it is possible to create a new String object by concatenating two or more strings together.
+
+
+2. java.lang.StringBuilder - This class is used when you need to modify the contents of a string frequently. Unlike the String class, the StringBuilder class is mutable, 
+   -----------------------
+   which means that you can change the contents of a StringBuilder object after it has been created.
+
+
+3. java.lang.StringBuffer - This class is similar to the StringBuilder class, but it is synchronized, which means that it is thread-safe.
+   ----------------------
+   This makes it useful in situations where multiple threads may be accessing the same StringBuilder object concurrently.
+
+
+String Builder functions in Java:
+--------------------------------
+
+StringBuilder is a class in Java that provides a set of functions to manipulate strings efficiently. Some of the most commonly used functions of StringBuilder in Java are:
+
+1. `append()`: This function is used to add characters or a string to the end of an existing StringBuilder object.
+
+2. `insert()`: This function is used to insert a string or characters at a specified position in a StringBuilder object.
+
+3. `replace()`: This function is used to replace a specific substring of a StringBuilder object with a new substring.
+
+4. `delete()`: This function is used to remove a specific substring from a StringBuilder object.
+
+5. `charAt()`: This function is used to get the character at a specified index in a StringBuilder object.
+
+6. `length()`: This function is used to get the length of a StringBuilder object.
+
+7. `substring()`: This function is used to get a substring of a StringBuilder object starting from a specified index.
+
+8. `reverse()`: This function is used to reverse the characters in a StringBuilder object.
+
+
+String Buffer functions in Java:
+--------------------------------
+
+String Buffer also have same functions like String Builder in java.
+
+
+String builder Vs String Buffer in Java:
+----------------------------------------
+
+StringBuffer and StringBuilder are both classes in Java that provide similar functionality for manipulating strings, but there are some important differences between them.
+
+The main difference between StringBuffer and StringBuilder is that StringBuffer is thread-safe, whereas StringBuilder is not. This means that if multiple threads are accessing a 
+
+StringBuffer object concurrently, the access is synchronized, which ensures that the object is not modified in an unexpected way. In contrast, if multiple threads are accessing a
+
+StringBuilder object concurrently, there is no synchronization, which can lead to unexpected behavior if the object is modified by multiple threads simultaneously.
+
+Another difference is that StringBuffer has some additional functions that are not available in StringBuilder, such as `capacity()`, `ensureCapacity()`, and `setLength()`. 
+
+These functions allow you to manipulate the capacity and length of a StringBuffer object, which can be useful in some situations.
+
+In terms of performance, StringBuilder is generally faster than StringBuffer because it does not have the overhead of synchronization.
+ 
+However, in situations where thread safety is important, StringBuffer may be a better choice.
+
+
+
+
+
+
